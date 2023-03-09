@@ -1,0 +1,25 @@
+<div class="grid flex justify-content-center">
+   <div class="card">
+      <div class="grid">
+      <div class="justify-content-center">
+      <p-card [style]="{'width': '50rem', 'margin-bottom': '2em'}">
+      <form (ngSubmit)="onLogin()" class="row g-3">
+     <h2 class="text-center mt-lg-2">Halaman Login</h2>
+     <div class="bg-left bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('./assets/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+             <div class="p-fluid">
+                 <div class="field">
+                     <label for="username">Email</label>
+                     <input pInputText id="email" type="email" lass="form-control" formControlName = "email"/>
+                 </div>
+                 <div class="field">
+                     <label for="password">Password</label>
+                     <p-password [toggleMask]="true"></p-password>
+                     <!-- <p-password formControlName="pass" [toggleMask]="true"></p-password>  -->
+                 </div>
+                 <p-button type="button" label="Click" type="submit" label="Masuk"></p-button>
+                 </div>
+                </form>
+              </p-card>
+            </div>
+          </div>
+</div>
