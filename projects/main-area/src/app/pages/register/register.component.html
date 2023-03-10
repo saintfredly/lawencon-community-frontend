@@ -1,0 +1,40 @@
+<div class="grid flex justify-content-center">
+  <div class="grid flex">
+    <div class="justify-content-start">
+      <div class="col-6">
+        <div class="flex flex-wrap align-items-start justify-content-start card-container blue-container">
+          <div class="absolute top-0 left-0 flex align-items-start justify-content-start w-25rem  border-round">
+            <p-image src="../../.././assets/working.png" alt="Image" width="576" height="580"></p-image>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <p-card [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+          <form (ngSubmit)="onRegister()" class="row g-3">
+            <h2 class="text-center mt-lg-2">Selamat Datang Comunity </h2>
+            <div class="p-fluid">
+              <div class="field">
+                <label for="username">Nama Lengkap</label>
+                <input pInputText id="name" type="text" lass="form-control" formControlName="name" />
+              </div>
+              <div class="field">
+                <label for="username">Email</label>
+                <input pInputText id="email" type="email" lass="form-control" formControlName="email" />
+              </div>
+              <div class="field">
+                <label for="password">Password</label>
+                <p-password [toggleMask]="true"></p-password>
+              </div>
+              <div class="field">
+                <label for="password">Konfirmasi Password</label>
+                <p-password [toggleMask]="true"></p-password>
+              </div>
+              <p-button type="button" label="Click" type="submit" label="Daftar"></p-button>
+            </div>
+          </form>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>

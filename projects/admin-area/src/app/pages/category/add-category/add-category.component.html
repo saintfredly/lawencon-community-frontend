@@ -1,0 +1,21 @@
+<div class="grid flex justify-content-center">
+    <div class="card">
+        <div class="grid">
+            <div class="justify-content-center">
+                <p-card [style]="{'width': '50rem', 'margin-bottom': '2em'}">
+                    <form [formGroup]="categorys" (ngSubmit)="addCategory()" class="row g-3">
+                        <h2 class="text-center mt-lg-2">Tambah Kategori</h2>
+                        <div class="p-fluid">
+                            <div class="field">
+                                <span class="p-float-label">
+                                    <input id="float-input" type="text" pInputText>
+                                    <label for="float-input">Masukkan Nama Kategori</label>
+                                </span>
+                            </div>
+                            <p-button type="button" label="Click" type="submit" label="Tambah Kategori"></p-button>
+                        </div>
+                    </form>
+                </p-card>
+            </div>
+        </div>
+    </div>

@@ -4,17 +4,20 @@ import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
 import {CardModule} from 'primeng/card';
 import {PasswordModule} from 'primeng/password';
+import {ImageModule} from 'primeng/image';
 
 
 
 import { AppComponent } from './app.component';
 import { AppRouting } from './app.routing';
 import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { LoginComponent } from './pages/login/login.component';
     ButtonModule,
     InputTextModule,
     CardModule,
-    PasswordModule
+    PasswordModule,
+    ImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
